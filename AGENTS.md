@@ -9,7 +9,7 @@ GoShipKit is a simple self-hosted project hub for teams of 2–10. Do not turn i
 - `apps/desktop`: Wails host and React frontend; reuse `packages/ui`.
 - `server`: Go + Chi modular monolith. Business logic lives in `internal/<domain>` and transport/infrastructure in `internal/platform`.
 - `packages/api-client`: generated-client boundary; prefer OpenAPI over handwritten endpoint duplication.
-- `server/migrations/000001_initial.up.sql`: PostgreSQL baseline for the full roadmap.
+- `server/migrations/`: ordered, forward-only PostgreSQL schema history.
 
 ## Invariants
 

@@ -73,9 +73,9 @@ curl http://localhost:8080/healthz
 
 A healthy API returns `{"status":"ok"}`. View startup errors with `docker compose logs -f api postgres`.
 
-Database data persists in the named `postgres-data` volume. `docker compose down` stops the stack without deleting it. **Do not run `docker compose down -v` unless you intentionally want to delete all local database data.** The initial SQL migration runs only when PostgreSQL creates a new empty volume.
+Database data persists in the named `postgres-data` volume. `docker compose down` stops the stack without deleting it. **Do not run `docker compose down -v` unless you intentionally want to delete all local database data.** Ordered SQL migrations run automatically only when PostgreSQL creates a new empty volume; follow the [migration runbook](docs/runbooks/database-migrations.md) for an existing installation.
 
-Before exposing an installation publicly, place a TLS reverse proxy in front of the API, keep PostgreSQL private, use managed secrets, and configure tested off-host backups. See [docs/development/getting-started.md](docs/development/getting-started.md) for development notes.
+Before exposing an installation publicly, place a TLS reverse proxy in front of the API, keep PostgreSQL private, use managed secrets, and configure tested off-host backups. See [development setup](docs/development/getting-started.md), the [database review](docs/architecture/database-review.md), and [operational runbooks](docs/runbooks/README.md).
 
 ## Develop from source
 

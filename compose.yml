@@ -17,7 +17,7 @@ services:
       - "127.0.0.1:5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./server/migrations/000001_initial.up.sql:/docker-entrypoint-initdb.d/001-goshipkit.sql:ro
+      - ./server/migrations:/docker-entrypoint-initdb.d:ro
 
   api:
     build:
