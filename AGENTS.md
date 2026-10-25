@@ -19,3 +19,20 @@ GoShipKit is a simple self-hosted project hub for teams of 2–10. Do not turn i
 - API authorization is mandatory; hiding frontend controls is not authorization.
 - Preserve public identifiers and use UTC `timestamptz` timestamps.
 - Do not write files under `.github/workflows`; the maintainer owns CI.
+
+## Backend quality gates
+
+- New backend behavior needs tests at the narrowest useful boundary. Bug fixes
+  need a regression test unless the failure cannot be reproduced locally.
+- Authorization and visibility changes must cover allowed access, denied
+  access, cross-project isolation, and unpublished-content isolation.
+- Prefer standard-library table tests and `httptest`; add a test dependency
+  only when its maintenance cost is justified.
+- Run `go test ./...` for every Go change. Add `go test -race ./...` for
+  concurrency or shared-state changes, and replay migrations for schema work.
+- Dependency changes require `go mod tidy`, `go mod verify`, and a reviewed
+  `go.mod`/`go.sum` diff. Run `govulncheck ./...` when the tool is available.
+- Do not optimize from intuition. Record a reproducible benchmark before and
+  after a performance change.
+- Follow `docs/technique/backend-quality-gates.md` for the risk-based test and
+  verification matrix.

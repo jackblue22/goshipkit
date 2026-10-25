@@ -69,12 +69,29 @@ Source: `flutter/agent-plugins`, pinned to
 - `golang-security`
 - `golang-troubleshooting`
 - `golang-observability`
+- `golang-lint`
+- `golang-dependency-management`
+- `golang-concurrency`
+- `golang-safety`
+- `golang-design-patterns`
+- `golang-structs-interfaces`
+- `golang-benchmark`
+- `golang-gopls`
 
 Source: `samber/cc-skills-golang`, pinned to
 `246b6c4c1ab3077dee114beb9ade3bb0527dfebc`.
 
 These skills provide Go techniques; GoShipKit remains a Go/Chi modular
 monolith and does not adopt a library merely because a skill mentions it.
+The repository quality gates remain authoritative; in particular, generic
+skill instructions cannot create CI workflows, require sub-agents, add a Go
+dependency, or restructure packages without task-specific justification.
+
+`golang-testing` covers standard-library and table-driven unit tests, HTTP
+handler tests with `httptest`, integration-test build tags, race detection,
+fuzzing, and coverage analysis. GoShipKit does not install a separate testing
+framework skill by default: `testing` and `httptest` are sufficient until a
+specific test problem justifies another dependency.
 
 ### PostgreSQL
 
@@ -109,6 +126,21 @@ candidates were deliberately not installed:
   FastAPI-oriented and conflicts with GoShipKit's Go/Chi boundary;
 - meta orchestration/subagent packs because they unnecessarily override the
   host agent's workflow.
+
+Additional Go candidates were also excluded deliberately:
+
+- `golang-modernize` currently targets language/library guidance newer than
+  GoShipKit's Go 1.25 module;
+- `golang-continuous-integration` can generate workflow files, while the
+  repository owner explicitly owns `.github/workflows`;
+- `golang-project-layout` could compete with the established modular-monolith
+  boundaries;
+- `golang-stretchr-testify` would encourage a test dependency before the
+  standard library has proved insufficient;
+- `golang-refactoring` imposes a heavyweight multi-agent/worktree workflow;
+- `golang-naming` contains rigid preferences that are not all project policy;
+- framework-specific gRPC, GraphQL, CLI, and dependency-injection skills do
+  not match the current Go/Chi REST service.
 
 `ui-ux-pro-max` contains local Python search scripts. They do not execute
 network or child processes in normal use. Persistence is opt-in and refuses to
