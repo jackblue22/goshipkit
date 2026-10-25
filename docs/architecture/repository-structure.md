@@ -13,7 +13,7 @@ goshipkit/
 │   ├── internal/             Domain and platform packages
 │   └── migrations/           Ordered PostgreSQL migrations
 ├── packages/                 Shared TypeScript packages, not deployables
-├── docs/                     Product, architecture, SRS, and development docs
+├── docs/                     Product, architecture, design, techniques, and runbooks
 ├── deploy/                   Container and deployment assets
 └── .github/                  Issue/community metadata; workflows owner-managed
 ```

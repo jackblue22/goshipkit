@@ -4,6 +4,7 @@
 - [Section IV scope review](product/section-iv-review.md) — resolved boundary, delivery order, and release gates.
 - [Architecture overview](architecture/overview.md) — runtime model and technical boundaries.
 - [Database review](architecture/database-review.md) — database responsibilities, gaps, and release gates.
+- [Product design contract](design/DESIGN.md) — shared web, mobile, and desktop visual language.
 - [Repository structure](architecture/repository-structure.md) — ownership of apps, packages, server modules, and root files.
 - [Development setup](development/getting-started.md) — local toolchain and database setup.
 - [Techniques](technique/README.md) — implementation patterns, algorithms, and agent tooling.

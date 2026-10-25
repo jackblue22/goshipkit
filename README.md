@@ -12,7 +12,7 @@ GoShipKit is a lightweight, self-hosted project hub for small teams. It keeps pr
 - Links to GitHub, Drive, Figma, Notion, demos, and other tools before adding deep integrations.
 - Self-hosted as a Go modular monolith backed by PostgreSQL.
 
-See [docs/product/features.md](docs/product/features.md) for the phased product scope and [docs/architecture/overview.md](docs/architecture/overview.md) for technical boundaries.
+See [product scope](docs/product/features.md), [architecture boundaries](docs/architecture/overview.md), and the shared [design contract](docs/design/DESIGN.md).
 
 ## Repository layout
 
@@ -36,7 +36,7 @@ goshipkit/
 │   ├── shared-types/             # Client-side shared types
 │   ├── ui/                       # Shared React UI for web and desktop
 │   └── config/                   # Shared TypeScript configuration
-├── docs/                         # Product, architecture, and development docs
+├── docs/                         # Product, architecture, design, techniques, and runbooks
 ├── deploy/docker/                # Container deployment assets
 ├── compose.yml                   # Self-host stack entry point
 ├── go.work                       # Server + desktop Go workspace
