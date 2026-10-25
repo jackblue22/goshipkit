@@ -1,0 +1,4 @@
+{
+  "extends": "@goshipkit/config/tsconfig/base.json",
+  "include": ["src"]
+}

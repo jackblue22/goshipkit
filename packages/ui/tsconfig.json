@@ -1,0 +1,4 @@
+{
+  "extends": "@goshipkit/config/tsconfig/react.json",
+  "include": ["src"]
+}

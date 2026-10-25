@@ -1,0 +1,16 @@
+{
+  "name": "goshipkit",
+  "private": true,
+  "packageManager": "pnpm@10.19.0",
+  "scripts": {
+    "build": "corepack pnpm -r --if-present build",
+    "dev:web": "corepack pnpm --filter @goshipkit/web dev",
+    "dev:desktop": "corepack pnpm --filter @goshipkit/desktop-frontend dev",
+    "lint": "corepack pnpm -r --if-present lint",
+    "typecheck": "corepack pnpm -r --if-present typecheck"
+  },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  }
+}

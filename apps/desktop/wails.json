@@ -1,0 +1,10 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "goshipkit",
+  "outputfilename": "GoShipKit",
+  "frontend:install": "corepack pnpm install",
+  "frontend:build": "corepack pnpm build",
+  "frontend:dev:watcher": "corepack pnpm dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": { "name": "Jack Blue" }
+}
