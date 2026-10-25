@@ -1,4 +1,4 @@
--- GoShipKit PostgreSQL bootstrap schema
+-- GoShipKit initial PostgreSQL schema
 -- Target: PostgreSQL 18 (syntax remains compatible with PostgreSQL 15+).
 -- This file models the full L1-L3 product roadmap. Features are enabled by the
 -- application release plan; table presence does not imply a shipped feature.

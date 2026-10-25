@@ -14,6 +14,17 @@ Positioning: a simple, self-hosted project hub that helps members and external s
 6. **One stakeholder engine.** Client, mentor, and investor portals are presets over the same access and publication model, not separate products.
 7. **Web first.** Responsive web is the primary client. Mobile and desktop follow the same API and are not separate backends.
 
+## How task IV was reconciled
+
+Task IV contains two product directions from different moments in the discussion. The later clarification—GoShipKit as a simple hub for teams under 10, especially 2–5 people—takes precedence over the earlier all-in-one engineering workspace proposal.
+
+- Retained: multi-project overview, tasks, resources, milestones, progress updates, mentor/client/investor views, explicit visibility, lightweight traceability, Git metadata, documents, diagrams, notifications, reports, and self-hosting.
+- Simplified: traceability uses generic links in PostgreSQL; Git integration stores metadata; stakeholder experiences share one portal engine; the initial workflow stays understandable without Scrum.
+- Deferred to L2/L3: full Scrum, QA suites, provider integrations, automation, AI assistance, advanced analytics, OIDC/SSO, plugin SDK, and offline synchronization.
+- Removed from the product boundary: Git hosting, IDE/editor, CI runner, registry, deployment engine, mandatory Git workflows, early microservices, Kafka, Kubernetes, graph databases, and autonomous code-changing agents.
+
+This precedence rule is why some ideas appearing early in task IV remain as optional L3 capabilities rather than MVP requirements.
+
 ## Roles and visibility
 
 ### Roles

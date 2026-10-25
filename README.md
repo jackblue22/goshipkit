@@ -12,7 +12,7 @@ GoShipKit is a lightweight, self-hosted project hub for small teams. It keeps pr
 - Links to GitHub, Drive, Figma, Notion, demos, and other tools before adding deep integrations.
 - Self-hosted as a Go modular monolith backed by PostgreSQL.
 
-See [features.md](features.md) for the phased product scope and [docs/architecture/overview.md](docs/architecture/overview.md) for technical boundaries.
+See [docs/product/features.md](docs/product/features.md) for the phased product scope and [docs/architecture/overview.md](docs/architecture/overview.md) for technical boundaries.
 
 ## Repository layout
 
@@ -48,4 +48,4 @@ Useful checks are `corepack pnpm build`, `corepack pnpm typecheck`, `go test ./.
 
 ## License
 
-GoShipKit is licensed under the [PolyForm Perimeter License 1.0.1](LICENSE). This license restricts using the software to offer a competing product. Because of that restriction, GoShipKit is **source-available**, not OSI-approved open source. Review the license before using or distributing the software.
+GoShipKit is licensed under the [PolyForm Perimeter License 1.0.1](LICENSE.md). This license restricts using the software to offer a competing product. Because of that restriction, GoShipKit is **source-available**, not OSI-approved open source. Review the license before using or distributing the software.
