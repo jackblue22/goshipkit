@@ -66,6 +66,7 @@ apps/desktop/frontend/wailsjs/
 .pub/
 build/
 apps/mobile/android/.gradle/
+apps/mobile/android/.kotlin/
 apps/mobile/android/local.properties
 apps/mobile/android/key.properties
 apps/mobile/ios/Flutter/ephemeral/

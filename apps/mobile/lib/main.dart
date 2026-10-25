@@ -11,9 +11,7 @@ class GoShipKitApp extends StatelessWidget {
       title: 'GoShipKit',
       theme: ThemeData(colorSchemeSeed: const Color(0xFF176B5B)),
       home: const Scaffold(
-        body: SafeArea(
-          child: Center(child: Text('GoShipKit mobile')),
-        ),
+        body: SafeArea(child: Center(child: Text('GoShipKit mobile'))),
       ),
     );
   }
