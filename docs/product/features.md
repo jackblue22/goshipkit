@@ -179,6 +179,11 @@ Portal presets:
   project-scoped member with the acceptance capability. Client and mentor are
   useful presets, not automatic approvers; the project owner designates who can
   sign off.
+- A project without a client or mentor still has an approver. The project owner
+  may assign acceptance to a project-scoped team lead, approve directly, or
+  explicitly authorize a workspace owner who also has access to that project.
+  If no assignment is recorded, the project owner is the default approver.
+  Workspace ownership alone never grants access to a private project.
 - A finding before approval becomes `changes_requested` and leads to a new
   revision. A finding after approval does not rewrite the accepted revision: it
   becomes a linked bug when the accepted criteria are no longer met, or a linked

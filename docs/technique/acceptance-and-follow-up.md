@@ -26,6 +26,19 @@ capability. A role preset such as client or mentor may include that capability,
 but the role name alone must not grant it. Workspace membership, a public link,
 or access to an external resource never grants approval authority.
 
+For a project without an external approver, the project owner chooses one of
+these project-scoped options:
+
+1. delegate acceptance to the team lead;
+2. retain acceptance as the project owner; or
+3. authorize the workspace owner for this project and its acceptance flow.
+
+If no choice is recorded, the project owner is the default approver. “Team
+lead” is an assigned project responsibility backed by capabilities, not a new
+workspace-wide role. A workspace owner must still receive explicit project
+access; workspace ownership alone must not reveal a private project or grant
+acceptance authority.
+
 An approver sees only the submitted revision, published acceptance criteria,
 and stakeholder-visible discussion. Internal comments, draft revisions, and
 unpublished evidence remain hidden. The API enforces both visibility and the
@@ -67,6 +80,9 @@ delivery, submit a new deliverable revision for a new decision.
 Implementation and tests must cover:
 
 - an authorized approver can decide on a visible submitted revision;
+- a project with no client or mentor falls back to its project owner;
+- a delegated project team lead can decide, while an undelegated member cannot;
+- a workspace owner can decide only after explicit project authorization;
 - an unauthorized user cannot decide, even if the UI control is hidden;
 - members of another project cannot read or decide on the revision;
 - draft and unpublished revisions are not visible to stakeholders;
