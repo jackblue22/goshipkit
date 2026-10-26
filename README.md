@@ -18,6 +18,7 @@ See [product scope](docs/product/features.md), [architecture boundaries](docs/ar
 
 ```text
 goshipkit/
+├── .agents/                       # Repo-local Codex workflow skills
 ├── apps/                         # Deployable clients
 │   ├── web/                      # React + Vite + TypeScript
 │   ├── mobile/                   # Flutter for Android and iOS

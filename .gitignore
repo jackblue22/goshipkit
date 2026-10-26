@@ -89,3 +89,5 @@ postgres-data/
 playwright-report/
 test-results/
 .nyc_output/
+__pycache__/
+*.py[cod]

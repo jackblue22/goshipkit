@@ -36,3 +36,10 @@ GoShipKit is a simple self-hosted project hub for teams of 2–10. Do not turn i
   after a performance change.
 - Follow `docs/technique/backend-quality-gates.md` for the risk-based test and
   verification matrix.
+
+## Mandatory repository skills
+
+- Use `$goshipkit-docs-sync` when code, schema, configuration, product behavior,
+  repository structure, operator steps, or agent workflows change.
+- Use `$goshipkit-change-verification` after the task diff is stable and before
+  claiming completion or committing a material change.

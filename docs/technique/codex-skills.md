@@ -12,6 +12,20 @@ Project rules in `AGENTS.md` and the design contract in
 Installing a skill does not authorize adding its suggested dependencies or
 changing product architecture.
 
+## Repository-local Codex skills
+
+These skills are versioned with GoShipKit under `.agents/skills/` so every
+contributor and Codex session uses the same project-specific workflow:
+
+- `goshipkit-change-verification` selects final checks from changed paths and
+  provides a cross-platform Python verifier;
+- `goshipkit-docs-sync` maps behavior, schema, configuration, structure, and
+  operational changes to their authoritative documentation.
+
+`AGENTS.md` requires both workflows when their trigger applies. They adapt the
+Codex-native pattern used by OpenAI repositories without copying repository-
+specific Python SDK commands or CI assumptions.
+
 ## Project-focused skills
 
 ### Delivery mindset

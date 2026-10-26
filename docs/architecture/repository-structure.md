@@ -4,6 +4,7 @@
 
 ```text
 goshipkit/
+├── .agents/                   Repo-local Codex workflow skills
 ├── apps/                     Deployable user clients
 │   ├── web/                  React + Vite browser app
 │   ├── mobile/               Flutter iOS/Android app
@@ -30,6 +31,10 @@ goshipkit/
 | `.env.example` | Documents the environment contract consumed by the root Compose stack and local services. |
 | `README.md`, `LICENSE.md`, `CONTRIBUTING.md`, `SECURITY.md` | Repository-wide files GitHub and contributors expect to discover at the top level. |
 | `AGENTS.md` | Repository-wide instructions that coding agents must discover before entering a subdirectory. |
+
+Repository-local skills live under `.agents/skills/`. Unlike workstation-level
+skills, they travel with the repository and encode GoShipKit-specific repeatable
+workflows such as documentation synchronization and final verification.
 
 Moving these files into individual apps would either duplicate global state or stop the corresponding workspace tool from coordinating the monorepo.
 
