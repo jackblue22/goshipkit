@@ -3,6 +3,7 @@
 This directory contains reusable implementation guidance. It complements ADRs (why a durable decision was made) and runbooks (how to operate or recover the system).
 
 - [Authorization and visibility](authorization-and-visibility.md)
+- [Acceptance and follow-up workflow](acceptance-and-follow-up.md)
 - [Progress calculation](progress-calculation.md)
 - [Reliable background jobs](reliable-background-jobs.md)
 - [PostgreSQL conventions](postgresql-conventions.md)

@@ -88,6 +88,12 @@ Acceptance: an owner can create a workspace, invite a member, create two project
 
 Acceptance: a member can create, assign, move, comment on, and complete a task; unauthorized stakeholders cannot enumerate internal tasks by guessing IDs.
 
+`Done` records the team's internal completion decision; it is not external
+acceptance. When a client, mentor, or another designated stakeholder must
+confirm completion, the team submits the relevant result as a deliverable under
+F14. This keeps internal workflow changes separate from auditable stakeholder
+sign-off.
+
 ### F05 — Milestones and task-completion progress
 
 - Milestone name, objective, owner, start/target dates, status, and linked tasks.
@@ -169,8 +175,18 @@ Portal presets:
 - Workflow: draft → submitted → approved or changes requested → revised → approved.
 - Named acceptance criteria, decision comments, decision timestamp, and immutable decision history.
 - Client change requests with scope/priority decision and optional links to resulting tasks.
+- Approval applies to a specific deliverable revision and may be made only by a
+  project-scoped member with the acceptance capability. Client and mentor are
+  useful presets, not automatic approvers; the project owner designates who can
+  sign off.
+- A finding before approval becomes `changes_requested` and leads to a new
+  revision. A finding after approval does not rewrite the accepted revision: it
+  becomes a linked bug when the accepted criteria are no longer met, or a linked
+  task/change request when it is new or changed scope.
 
-Acceptance: only an authorized approver can decide; internal comments and unpublished revisions never appear in the client portal.
+Acceptance: only an authorized approver can decide; the actor, timestamp,
+revision, criteria, and decision remain auditable; internal comments and
+unpublished revisions never appear in the stakeholder portal.
 
 ### F15 — GitHub integration
 

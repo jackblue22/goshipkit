@@ -44,8 +44,10 @@ database. Their tables or extension points do not mean the feature is shipped.
   safe export/share flows.
 - Integrations: provider links first, then read-only metadata synchronization;
   deeper automation only after idempotency and recovery are proven.
-- Advanced roadmap: acceptance workflows, QA, reporting, automation, and
-  provider-specific enhancements based on observed demand.
+- Advanced roadmap: revision-specific stakeholder acceptance, post-acceptance
+  bug/change-request traceability, QA, reporting, automation, and
+  provider-specific enhancements based on observed demand. Internal task
+  `Done` never substitutes for an authorized stakeholder decision.
 
 ## Remaining release gates
 
